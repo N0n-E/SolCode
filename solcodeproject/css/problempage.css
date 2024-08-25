@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Basic styles for the navigation bar */
+nav {
+  background-color: #555555;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Style for the home icon */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+nav a.home-icon {
+  font-size: 24px;
+  color: black; /* Set the icon color to black */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#problemName {
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+#content {
+  display: block;
+  background-color: rgb(235, 235, 235);
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  min-width: fit-content;
+}
+
+.content {
+  overflow-x: auto;
+  border-radius: 20px;
+  background-color: rgb(210, 210, 210);
+  padding: 0px;
+}
+
+#contentContainer {
+  background-color: rgb(210, 210, 210);
+  position: relative;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+#copyButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: rgb(210, 210, 210);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+}
+
+#copyButton:hover {
+  background-color: #ffffff;
+}
+
+pre {
+  margin-top: 30px; /* Adjust margin to ensure content isn't hidden behind the button */
+}
+
+/* Custom scrollbar for WebKit browsers (Chrome, Safari, etc.) */
+#contentContainer::-webkit-scrollbar {
+  height: 10px; /* Height of the scrollbar */
+}
+
+#contentContainer::-webkit-scrollbar-track {
+  background-color: rgb(
+    210,
+    210,
+    210
+  ); /* Background color of the scrollbar track */
+  border-radius: 5px;
+}
+
+#contentContainer::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 5px;
+}
+
+#contentContainer::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color when hovering over the scrollbar thumb */
+}
+
+/* Custom scrollbar for Firefox */
+#contentContainer {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #888 #f0f0f0; /* Thumb color and track color */
+}
+
+#scrollToTopBtn {
+  position: fixed; /* Stays in the same place even when the page scrolls */
+  bottom: 20px; /* Position from the bottom of the page */
+  right: 20px; /* Position from the right side of the page */
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  z-index: 1000; /* Make sure it's on top of other elements */
+}
+
+#scrollToTopBtn:hover {
+  background-color: #0056b3;
+}

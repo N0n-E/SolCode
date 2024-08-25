@@ -1,0 +1,200 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styles for the navigation bar */
+nav {
+  background-color: #555555;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Style for the home icon */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+nav a.home-icon {
+  font-size: 24px;
+  color: black; /* Set the icon color to black */
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.search-filter {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.search-filter input,
+.search-filter select {
+  padding: 10px;
+  font-size: 16px;
+  flex: 1;
+  min-width: 150px;
+}
+
+table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+th {
+  background-color: #3498db;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Adjust the width of each column */
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 30%; /* First column (ID) */
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 50%; /* Second column (Problem Name) */
+  min-width: 200px; /* Minimum width for the Problem Name column */
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 20%; /* Third column (category) */
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.pagination {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-filter {
+    flex-direction: column;
+  }
+  th,
+  td {
+    padding: 8px;
+    font-size: 14px;
+  }
+  th:nth-child(1),
+  td:nth-child(1) {
+    width: 5%; /* First column (ID) */
+  }
+
+  th:nth-child(2),
+  td:nth-child(2) {
+    width: 60%; /* Second column (Problem Name) */
+    min-width: 200px; /* Minimum width for the Problem Name column */
+  }
+
+  th:nth-child(3),
+  td:nth-child(3) {
+    width: 35%; /* Third column (Difficulty) */
+  }
+
+  th:nth-child(4),
+  td:nth-child(4) {
+    width: 0%; /* Fourth column (Status) */
+  }
+}
+@media (max-width: 480px) {
+  .search-filter {
+    flex-direction: column;
+  }
+  th,
+  td {
+    padding: 6px;
+    font-size: 12px;
+  }
+  .pagination button {
+    padding: 8px 10px;
+    margin: 0 3px;
+    font-size: 12px;
+  }
+  th:nth-child(1),
+  td:nth-child(1) {
+    width: 0%; /* First column (ID) */
+  }
+
+  th:nth-child(2),
+  td:nth-child(2) {
+    width: 75%; /* Second column (Problem Name) */
+    min-width: 200px; /* Minimum width for the Problem Name column */
+  }
+
+  th:nth-child(3),
+  td:nth-child(3) {
+    width: 25%; /* Third column (Difficulty) */
+  }
+
+  th:nth-child(4),
+  td:nth-child(4) {
+    width: 0%; /* Fourth column (Status) */
+  }
+}
