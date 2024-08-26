@@ -122,8 +122,8 @@ pre {
 
 #scrollToTopBtn {
   position: fixed; /* Stays in the same place even when the page scrolls */
-  bottom: 20px; /* Position from the bottom of the page */
-  right: 20px; /* Position from the right side of the page */
+  bottom: 10px; /* Position from the bottom of the page */
+  right: 10px; /* Position from the right side of the page */
   padding: 10px 15px;
   background-color: #007bff;
   color: white;
