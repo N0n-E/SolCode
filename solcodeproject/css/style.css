@@ -132,10 +132,19 @@ a:hover {
   cursor: not-allowed;
 }
 
+#jump-to-page {
+  width: 100px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .search-filter {
     flex-direction: column;
+  }
+  .pagination button {
+    padding: 8px 12px;
+    margin: 0 3px;
+    font-size: 12px;
   }
   th,
   td {
@@ -144,7 +153,8 @@ a:hover {
   }
   th:nth-child(1),
   td:nth-child(1) {
-    width: 5%; /* First column (ID) */
+    width: 23%; /* First column (ID) */
+    max-width: 80px;
   }
 
   th:nth-child(2),
@@ -155,12 +165,7 @@ a:hover {
 
   th:nth-child(3),
   td:nth-child(3) {
-    width: 35%; /* Third column (Difficulty) */
-  }
-
-  th:nth-child(4),
-  td:nth-child(4) {
-    width: 0%; /* Fourth column (Status) */
+    width: 17%; /* Third column (category) */
   }
 }
 @media (max-width: 480px) {
@@ -171,27 +176,49 @@ a:hover {
   td {
     padding: 6px;
     font-size: 12px;
+    table-layout: auto;
   }
   .pagination button {
-    padding: 8px 10px;
+    padding: 4px 6px;
     margin: 0 3px;
     font-size: 12px;
   }
+  #jump-to-page {
+    width: 85px;
+    padding: 0px;
+    font-size: 11px;
+  }
   th:nth-child(1),
   td:nth-child(1) {
-    width: 0%; /* First column (ID) */
+    width: 25%; /* First column (ID) */
+    max-width: 50px;
   }
 
   th:nth-child(2),
   td:nth-child(2) {
-    width: 75%; /* Second column (Problem Name) */
-    min-width: 200px; /* Minimum width for the Problem Name column */
+    width: 65%; /* Second column (Problem Name) */
+    min-width: auto;
   }
 
   th:nth-child(3),
   td:nth-child(3) {
-    width: 25%; /* Third column (Difficulty) */
+    width: 10%; /* Third column (category) */
   }
+}
+
+@media (max-width: 376px) {
+  .pagination button {
+    padding: 2px 4px;
+    margin: 0 2px;
+    font-size: 10px;
+  }
+  #jump-to-page {
+    width: 76px;
+    padding: 0px;
+    font-size: 10px;
+  }
+}
+
 
   th:nth-child(4),
   td:nth-child(4) {
