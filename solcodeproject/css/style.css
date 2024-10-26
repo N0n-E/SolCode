@@ -26,6 +26,10 @@ nav a.home-icon {
   font-size: 24px;
   color: black; /* Set the icon color to black */
 }
+nav h1 {
+  color: #f1f1f1;
+  margin: 0;
+}
 
 .container {
   width: 90%;
@@ -135,6 +139,36 @@ a:hover {
 #jump-to-page {
   width: 100px;
   margin: 0 3px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: smaller;
+}
+
+footer nav {
+  background-color: #333;
+  display: inline-block; /* Centers nav within the footer */
+  margin-top: 10px;
+}
+
+footer nav a,
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: smaller;
+}
+
+footer a:hover {
+  color: #ddd;
 }
 
 /* Responsive Design */
