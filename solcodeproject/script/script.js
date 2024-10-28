@@ -528,7 +528,7 @@ function renderProblems() {
   //render each value for each column on 1 row
   paginatedProblems.forEach((problem) => {
     const row = document.createElement("tr");
-    let NameF = TmpF + problem.id.toString() + EndF;
+    let NameF = TmpF + problem.id.toString() ;
     row.innerHTML = `
     <td><a href="${problem.link}" target="_blank" >${problem.ID}</a></td>
                 <td><a href="${NameF}" target="_self" >${problem.name}</td>
